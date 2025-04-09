@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const obtainedMarks = parseFloat(prompt("Enter obtained marks : "));
+      const totalMarks = parseInt(prompt("Enter total marks : "));
+      const percentage = (obtainedMarks / totalMarks) * 100;
+      const result =
+        percentage >= 90
+          ? "Grade A"
+          : percentage >= 80
+          ? "Grade B"
+          : percentage >= 70
+          ? "Grade C"
+          : percentage >= 60
+          ? "Grade D"
+          : percentage >= 50
+          ? "Grade E"
+          : percentage >= 40
+          ? "Grade F"
+          : "Fail";
+      console.log(`Obtained Marks: ${obtainedMarks}`);
+      console.log(`Total Marks: ${totalMarks}`);
+      console.log(`Percentage: ${percentage}`);
+      console.log(`Result : ${result}`);
+    </script>
+  </body>
+</html>
